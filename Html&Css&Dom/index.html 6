@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML & CSS-5</title>
+<style>
+* {
+box-sizing: border-box;
+padding-left: 20px;
+}
+.column {
+float: left;
+width: 20%;
+padding: 20px;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+@media screen and (max-width: 992px) {
+.column {
+width: 50%;
+}
+}
+@media screen and (max-width: 600px) {
+.column {
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<h2>Media query</h2>
+<div class="row">
+<div class="column" style="background-color:#bbb;">
+Age 64
+<h2>Father</h2>
+<p>sivakumar Palani</p>
+</div>
+<div class="column" style="background-color:#bbbaef;">
+Age 56
+<h2>Mother</h2>
+<p>Mageswari sivakumar</p>
+</div>
+</div>
+<div class="row">
+<div class="column" style="background-color:#afbb;">
+Age 30
+<h2>Elder brother</h2>
+<p>Sathish sivakumar</p>
+</div>
+<div class="column" style="background-color:#dfb;">
+Age 28
+<h2>Younger brother</h2>
+<p>Venkatesh sivakumar</p>
+</div>
+</div>
+<hr>
+<!-- <div class="row">
+<div class="column" style="background-color:#aaa;">
+<h2>Younger brother</h2>
+<p>Venkatesh sivakumar</p>
+</div>
+<div class="column" style="background-color:#bbb;">
+<h2>Father</h2>
+<p>Sankar Palani</p>
+</div>
+<div class="column" style="background-color:#ccc;">
+<h2>Mother 3</h2>
+<p>Santhi Sankar</p>
+</div>
+<div class="column" style="background-color:#ddd;">
+<h2>Last Brother 4</h2>
+<p>Karthi Sankar</p>
+</div>
+</div> -->
+</body>
+</html>
